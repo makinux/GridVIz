@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>grid viz</title>
+<script src="./js/lib/Cesium-1.12/Cesium.js"></script>
+<script src="./js/lib/proj4.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<style>
+@import url(./js/lib/Cesium-1.12/Widgets/widgets.css);
+
+#cesiumContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        font-family: sans-serif;
+      }
+html {
+        height: 100%;
+      }
+body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        height: 100%;
+      }
+#toolbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(42, 42, 42, 0.8);
+	color: #ffffff;
+	padding: 4px;
+	border-radius: 4px;
+	height: 350px;
+	width: 300px;
+}
+
+</style>
+</head>
+<body>
+  <div id="container" style="width: 100%; height: 100%">
+    <!-- The left eye canvas container -->
+    <div id="cesiumContainer">
+    </div>
+    <!-- Holds any ui overlay elements, e.g. fps -->
+    
+    <!-- <div id="ui" class="fit"></div> -->
+    <table id="toolbar">
+    	<tr id="slidebar">
+    		
+    	</tr>
+    	<tr>
+	    	<td id="gridsize">
+	    	</td>
+    		<td id="caption">
+    			<input type="checkbox" name="rangeQuartile" value="1" id="rangeQuartile"><label for="rangeQuartile">range quartile</label><br>
+    	You can switch the quartile view by pressing the 1-5 keys.
+	    <div id="color-bar">
+	    	<div style="width: 10px; height: 10px; padding: 4px; background-color:#a7dbc7"></div><div id="q1"></div><div id="q-alpha-0"></div>
+	    	<div style="width: 10px; height: 10px; padding: 4px; background-color:#d6ea9a"></div><div id="q2"></div><div id="q-alpha-1"></div>
+	    	<div style="width: 10px; height: 10px; padding: 4px; background-color:#fff0b1"></div><div id="q3"></div><div id="q-alpha-2"></div>
+	    	<div style="width: 10px; height: 10px; padding: 4px; background-color:#ffd9ad"></div><div id="q4"></div><div id="q-alpha-3"></div>
+	    	<div style="width: 10px; height: 10px; padding: 4px; background-color:#ffb3d3"></div><div id="q5"></div><div id="q-alpha-4"></div>
+	    </div>
+	    contact us <a href='https://twitter.com/wayama_ryousuke' target='_blank'>@wayama_ryousuke</a> 
+    		</td>
+    	</tr>
+    </table>
+  </div>
+  
+<!-- app -->
+<script src="./js/grid_viz.js"></script>
+</body>
+</html>
