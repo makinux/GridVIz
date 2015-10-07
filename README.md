@@ -21,6 +21,7 @@ And required python2.7,netcdf-python
 Users filter for the desired data by controlling the slide bar. The TIME slide is fixed, but the other slide bars change according to the varCols of the GET parameter of the URL. The default display is a quartile of the variable farthest to the left, but when users change the range of the variable, it will then display the quartile of the selected variable. gridStep, from the URL parameter, shows the degree of fineness of longitude and latitude. To quickly see the overview, they increase the gridStep of the URL parameter; to view at smaller increments, users decrease the parameter.
 
 example url
+
      http://[server ip]/grid_viz.html?fileType=1&varCols=temp,rh&gridStep=5&zAdjustment=1000
 
 
