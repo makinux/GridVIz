@@ -5,7 +5,7 @@ GRID VIZ uses four-dimensional (time, longitude, latitude, and atmospheric press
 
 For more information see http://cesiumjs.org/demos/GridViz.html
 
-## required 
+## Require
 
 We tested GRID VIZ on CentOS6.5 configurations.
 And required python2.7,netcdf-python
