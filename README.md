@@ -8,7 +8,8 @@ For more information see http://cesiumjs.org/demos/GridViz.html
 ## required 
 
 We tested GRID VIZ on CentOS6.5 configurations.
-And required python2.7,netcdf-python(https://code.google.com/p/netcdf4-python/).
+And required python2.7,netcdf-python
+(https://code.google.com/p/netcdf4-python/).
 
     wget --no-check-certificate https://pypi.python.org/packages/source/n/netCDF4/netCDF4-1.1.3.tar.gz
     tar -zxvf netCDF4-1.1.3.tar.gz
