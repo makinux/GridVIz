@@ -5,6 +5,7 @@ GRID VIZ makes possible easy visualization of NetCDF data with longitude and lat
 GRID VIZ uses four-dimensional (time, longitude, latitude, and atmospheric pressure) data from the Japan Meteorological Agency. Users can visualize the variable space they want to observe by filtering each variable and moving the time axis. Also, when filtering with variables, they can view the distribution of data intuitively by dividing the spaces by color into quartiles.
 
 For more information see http://cesiumjs.org/demos/GridViz.html
+video https://www.youtube.com/watch?v=-SazQPD4tgM
 
 ## Require
 
