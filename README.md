@@ -16,10 +16,18 @@ And required python2.7,netcdf-python
 
 example
 
-    wget --no-check-certificate https://pypi.python.org/packages/source/n/netCDF4/netCDF4-1.1.3.tar.gz
-    tar -zxvf netCDF4-1.1.3.tar.gz
-    cd netCDF4-1.1.3
-    python setup.py install
+    yum clean all
+    yum update yum
+    yum update curl
+    yum update openssl
+    yum update nss
+    yum install epel-release
+    wget https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/ius-release-1.0-15.ius.centos6.noarch.rpm
+    rpm -Uvh ius-release-1.0-15.ius.centos6.noarch.rpm
+    yum install hdf5-devel netcdf-devel python27-setuptools python27-pip python27-devel gcc libcurl-devel mod_python
+    pip2.7 install numpy==1.14.6
+    pip2.7 install cython
+    pip2.7 install netCDF4
 
 ## Usage
 
